@@ -1,0 +1,9 @@
+<div class="container">
+<input [(ngModel)]="searchInput" placeholder="search" type="text"/>
+<div class="col-xs-12">
+<div *ngFor="let i of hospitals | filter:searchInput">
+  <div class="col-xs-4 padd">
+  <a routerLink="/register"><img src="./assets/matrix.jpg"/>{{i}}</a>
+</div>
+</div>
+</div>
